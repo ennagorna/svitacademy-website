@@ -1,0 +1,30 @@
+# ============================================================
+# Svit Academy — правила переадресації (Cloudflare Pages)
+# Формат:  /старий-шлях  /новий-шлях  код
+# ============================================================
+
+# --- Старі URL із SendPulse (щоб не втратити трафік і не давати 404) ---
+/konsultacji-dla-batkiv      /klub-tvorchiy-vchytel.html   301
+/konsultacji-dla-batkiv/     /klub-tvorchiy-vchytel.html   301
+/seo                         /                             301
+/seo/                        /                             301
+
+# --- Чисті адреси без .html (щоб працювали обидва варіанти) ---
+/kursy-dlya-ditey            /kursy-dlya-ditey.html        301
+/kursy-dlya-batkiv           /kursy-dlya-batkiv.html       301
+/kursy-dlya-pedagogiv        /kursy-dlya-pedagogiv.html    301
+/navchalni-materialy         /navchalni-materialy.html     301
+/klub-tvorchiy-vchytel       /klub-tvorchiy-vchytel.html   301
+/litniy-klub-repetytoram     /litniy-klub-repetytoram.html 301
+/pro-nas                     /pro-nas.html                 301
+/pro-oksanu-nagornu          /pro-oksanu-nagornu.html      301
+/blog                        /blog.html                    301
+/kontakty                    /kontakty.html                301
+/legal                       /legal.html                   301
+/oferta                      /legal.html#oferta            301
+/privacy                     /legal.html#privacy           301
+
+# --- Зручні короткі адреси ---
+/klub                        /klub-tvorchiy-vchytel.html   301
+/materialy                   /navchalni-materialy.html     301
+/oksana                      /pro-oksanu-nagornu.html      301

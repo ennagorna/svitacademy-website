@@ -1,0 +1,147 @@
+/* ============================================================
+   Svit Academy — parents.css (сторінка «Курси для батьків»)
+   ============================================================ */
+
+/* Блок болю «Якщо знайомо хоча б одне» */
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+.pain-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+}
+.pain-card__ico {
+  flex-shrink: 0;
+  width: 46px; height: 46px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-orange);
+  color: var(--color-cta);
+  display: flex; align-items: center; justify-content: center;
+}
+.pain-card p { font-family: var(--font-head); font-weight: 600; font-size: var(--fs-small); }
+
+/* Декор секцій */
+.p-section { position: relative; overflow: hidden; }
+.p-section > .container { position: relative; z-index: 1; }
+.p-deco { position: absolute; z-index: 0; pointer-events: none; }
+.p-deco--tl { top: 26px;    left: -22px; transform: rotate(-14deg); }
+.p-deco--tr { top: 30px;    right: 4%;   transform: rotate(16deg); }
+.p-deco--bl { bottom: 26px; left: 4%; }
+.p-deco--br { bottom: -26px; right: -28px; }
+@media (max-width: 800px) { .p-deco--tr, .p-deco--bl { display: none; } }
+
+/* Для кого програма */
+.forwhom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+.forwhom--stack { grid-template-columns: 1fr; }
+.forwhom__item {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  background: var(--color-bg-blue);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+.forwhom__item svg { flex-shrink: 0; color: var(--color-accent-blue); margin-top: 2px; }
+.forwhom__item p { font-size: var(--fs-small); }
+
+/* Модулі курсу */
+.module-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+.module-card__num {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: var(--fs-label);
+  color: var(--color-primary);
+  background: var(--color-bg-lavender);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-3);
+}
+.module-card__title { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-h3); margin-bottom: var(--space-4); }
+.module-card__list { display: flex; flex-direction: column; gap: var(--space-2); }
+.module-card__list li { display: flex; gap: var(--space-2); font-size: var(--fs-small); line-height: 1.5; }
+.module-card__list svg { flex-shrink: 0; color: #639922; margin-top: 3px; }
+
+/* Детальний склад тарифів */
+.extras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-5);
+}
+.extras__col {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+.extras__title {
+  display: flex; align-items: center; gap: var(--space-2);
+  font-family: var(--font-head); font-weight: 700; font-size: var(--fs-body);
+  margin-bottom: var(--space-4);
+}
+.extras__title img { width: 30px; height: 30px; }
+.extras__list { display: flex; flex-direction: column; gap: var(--space-2); }
+.extras__list li { display: flex; gap: var(--space-2); font-size: var(--fs-small); line-height: 1.5; }
+.extras__list svg { flex-shrink: 0; color: #639922; margin-top: 3px; }
+
+/* Чому саме ми */
+.why-card {
+  text-align: center;
+  padding: var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+}
+.why-card__ico { width: 66px; height: 66px; margin: 0 auto var(--space-4); display: block; }
+.why-card h3 { font-size: var(--fs-body); margin-bottom: 6px; }
+.why-card p { font-size: var(--fs-small); color: var(--color-text-muted); }
+
+/* ============================================================
+   Єдина анімація наведення для карток (узгоджено з рештою сайту)
+   ============================================================ */
+.pain-card, .forwhom__item, .module-card, .extras__col, .why-card {
+  transition: transform var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out),
+              background var(--dur-fast) var(--ease-out);
+}
+.pain-card:hover,
+.module-card:hover,
+.extras__col:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent-blue);
+}
+.forwhom__item:hover { transform: translateY(-3px); box-shadow: var(--shadow-card); }
+.why-card:hover {
+  transform: translateY(-4px);
+  background: #fff;
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Іконки трохи «оживають» */
+.pain-card__ico, .why-card__ico, .extras__title img { transition: transform var(--dur-base) var(--ease-out); }
+.pain-card:hover .pain-card__ico { transform: scale(1.12) rotate(-4deg); }
+.why-card:hover .why-card__ico { transform: scale(1.12); }
+.extras__col:hover .extras__title img { transform: scale(1.12); }
+
+@media (prefers-reduced-motion: reduce) {
+  .pain-card, .forwhom__item, .module-card, .extras__col, .why-card,
+  .pain-card__ico, .why-card__ico, .extras__title img { transition: none; }
+}

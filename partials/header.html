@@ -1,0 +1,77 @@
+<!-- ============================================================
+     Svit Academy — Header (спільний). Вставляється через include.js.
+     Активний пункт: додати клас nav__link--active на потрібному лінку
+     на кожній сторінці (напр. через data-page у include.js).
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header__inner">
+
+    <!-- Логотип (замінити mark на офіційний logo-svit-academy.svg) -->
+    <a href="/index.html" class="header__logo" aria-label="Svit Academy — на головну">
+      <svg class="header__logo-mark" viewBox="0 0 34 34" aria-hidden="true">
+        <rect x="1"  y="1"  width="15" height="15" rx="4" fill="#4536CA"/>
+        <rect x="18" y="1"  width="15" height="15" rx="4" fill="#0DAFEB"/>
+        <rect x="1"  y="18" width="15" height="15" rx="4" fill="#F25A09"/>
+        <rect x="18" y="18" width="15" height="15" rx="4" fill="#A3DB33"/>
+      </svg>
+      <span>SVIT ACADEMY</span>
+    </a>
+
+    <!-- Бургер (мобільний) -->
+    <button class="header__burger" data-nav-toggle aria-label="Меню" aria-expanded="false" aria-controls="site-nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+      </svg>
+    </button>
+
+    <!-- Навігація -->
+    <nav class="nav" id="site-nav" aria-label="Головне меню">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="/index.html">Головна</a></li>
+        <li class="nav__item"><a class="nav__link" href="/kursy-dlya-ditey.html">Курси для дітей</a></li>
+        <li class="nav__item"><a class="nav__link" href="/kursy-dlya-batkiv.html">Курси для батьків</a></li>
+
+        <!-- Дропдаун: Педагоги -->
+        <li class="nav__item" data-dropdown>
+          <a class="nav__link" href="/kursy-dlya-pedagogiv.html" aria-haspopup="true" aria-expanded="false">
+            Курси для педагогів
+            <svg class="nav__caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="/klub-tvorchiy-vchytel.html">Клуб «Творчий Вчитель»</a>
+            <a href="/litniy-klub-repetytoram.html">Літній клуб для репетиторів</a>
+          </div>
+        </li>
+
+        <!-- Дропдаун: Матеріали -->
+        <li class="nav__item" data-dropdown>
+          <a class="nav__link" href="/navchalni-materialy.html" aria-haspopup="true" aria-expanded="false">
+            Навчальні матеріали
+            <svg class="nav__caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="https://svitacademy.wayforpay.shop" target="_blank" rel="noopener">Роздрібний магазин</a>
+            <a href="/navchalni-materialy.html#sezonni">Сезонні набори</a>
+            <a href="/navchalni-materialy.html#tabirni">Табірні програми</a>
+          </div>
+        </li>
+
+        <li class="nav__item"><a class="nav__link" href="/pro-nas.html">Про нас</a></li>
+
+        <!-- Дії всередині меню (видно на мобільному) -->
+        <li class="nav__item nav__item--mobile-cta">
+          <a class="btn btn--cta" href="/kursy-dlya-ditey.html" style="width:100%;margin-top:12px;">Обрати курс</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Дії справа (десктоп) -->
+    <div class="header__actions">
+      <a class="header__icon-btn" href="https://t.me/SvitAcademyBot" target="_blank" rel="noopener" aria-label="Написати в Telegram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19c-.23 1-.83 1.25-1.68.78l-4.65-3.43-2.24 2.16c-.25.25-.46.46-.94.46l.33-4.74 8.63-7.8c.38-.33-.08-.52-.58-.19L7.24 13.1l-4.6-1.44c-1-.31-1.02-1 .21-1.48l17.86-6.88c.83-.31 1.56.2 1.23 1.7Z"/></svg>
+      </a>
+      <a class="btn btn--cta" href="/kursy-dlya-ditey.html">Обрати курс</a>
+    </div>
+
+  </div>
+</header>

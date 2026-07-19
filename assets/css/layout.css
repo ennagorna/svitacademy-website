@@ -1,0 +1,40 @@
+/* ============================================================
+   Svit Academy — Layout: контейнер, секції, сітки
+   ============================================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+/* Секція сторінки */
+.section {
+  padding-block: var(--space-section);
+}
+.section--lavender { background: var(--color-bg-lavender); }
+.section--blue     { background: var(--color-bg-blue); }
+.section--green    { background: var(--color-bg-green); }
+.section--dark     {
+  background: var(--color-primary-deep);
+  color: var(--color-on-dark);
+}
+.section--dark h1, .section--dark h2, .section--dark h3 { color: var(--color-on-dark); }
+
+/* Заголовок секції */
+.section__head {
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: var(--space-8);
+}
+.section__head p { margin-inline: auto; color: var(--color-text-muted); margin-top: var(--space-3); }
+
+/* Універсальні сітки карток (без медіазапитів) */
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+.grid--auto-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid--auto-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }

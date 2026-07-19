@@ -1,0 +1,79 @@
+/* ============================================================
+   Svit Academy — contacts.css (сторінка «Контакти»)
+   ============================================================ */
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+@media (max-width: 860px) { .contacts-grid { grid-template-columns: 1fr; } }
+
+/* Способи звʼязку */
+.contact-methods { display: flex; flex-direction: column; gap: var(--space-3); }
+.contact-card {
+  display: flex; align-items: center; gap: var(--space-4);
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: var(--space-4) var(--space-5);
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--color-accent-blue); text-decoration: none; }
+.contact-card__ico {
+  flex-shrink: 0; width: 48px; height: 48px; border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+}
+.contact-card__label { font-size: var(--fs-label); color: var(--color-text-muted); }
+.contact-card__value { font-family: var(--font-head); font-weight: 600; color: var(--color-text); }
+
+.contact-socials { display: flex; gap: var(--space-2); margin-top: var(--space-2); }
+.contact-social {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; border-radius: var(--radius-full);
+  background: var(--color-bg-lavender); color: var(--color-primary);
+  transition: background var(--dur-fast) var(--ease-out);
+}
+.contact-social:hover { background: var(--color-bg-blue); }
+
+/* Форма */
+.form {
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-6);
+}
+.field { margin-bottom: var(--space-4); }
+.field label { display: block; font-family: var(--font-head); font-weight: 600; font-size: var(--fs-small); margin-bottom: 6px; }
+.field .req { color: var(--color-cta); }
+.field input, .field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  min-height: 46px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-text);
+  transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.field textarea { min-height: 120px; resize: vertical; }
+.field input:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(54,40,176,.12);
+}
+.field__error { display: none; color: #a32d2d; font-size: var(--fs-label); margin-top: 6px; }
+.field--invalid input, .field--invalid textarea { border-color: #a32d2d; }
+.field--invalid .field__error { display: block; }
+
+.form .btn { width: 100%; }
+.form__status {
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-green);
+  color: #3b6d11;
+  font-size: var(--fs-small);
+  display: none;
+}
+.form__status--show { display: block; }
+.form__hint { font-size: var(--fs-label); color: var(--color-text-muted); margin-top: var(--space-3); text-align: center; }

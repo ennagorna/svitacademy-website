@@ -1,0 +1,76 @@
+/* ============================================================
+   Svit Academy — legal.css (Оферта + Політика конфіденційності)
+   ============================================================ */
+
+.legal-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+/* Бічна навігація документа */
+.legal-nav {
+  position: sticky;
+  top: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-4);
+  background: var(--color-bg-lavender);
+  border-radius: var(--radius-lg);
+}
+.legal-nav__title { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-label); text-transform: uppercase; letter-spacing: .06em; color: var(--color-text-muted); margin-bottom: var(--space-2); }
+.legal-nav a {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: var(--fs-small);
+}
+.legal-nav a:hover { background: #fff; color: var(--color-primary); text-decoration: none; }
+
+/* Тіло документа */
+.legal-doc { max-width: 76ch; }
+.legal-doc__title { font-size: var(--fs-h2); margin-bottom: var(--space-2); }
+.legal-doc__meta { color: var(--color-text-muted); font-size: var(--fs-small); margin-bottom: var(--space-6); }
+.legal-doc h3 {
+  font-size: var(--fs-h3);
+  color: var(--color-primary-deep);
+  margin: var(--space-8) 0 var(--space-3);
+  padding-top: var(--space-2);
+}
+.legal-doc p { margin-bottom: var(--space-3); line-height: 1.7; }
+.legal-doc ul { margin: 0 0 var(--space-4) var(--space-5); list-style: disc; }
+.legal-doc li { margin-bottom: 6px; line-height: 1.6; }
+.legal-doc em { color: var(--color-text-muted); }
+.legal-doc code { background: var(--color-bg-lavender); padding: 2px 6px; border-radius: 4px; font-size: .9em; }
+
+/* Примітка / дисклеймер */
+.legal-note {
+  background: var(--color-bg-orange);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+}
+.legal-note strong { color: var(--color-warm); }
+
+/* Реквізити */
+.legal-req {
+  background: var(--color-bg-lavender);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+  font-size: var(--fs-small);
+  line-height: 1.9;
+  margin-top: var(--space-5);
+}
+.legal-req strong { font-family: var(--font-head); }
+
+@media (max-width: 820px) {
+  .legal-layout { grid-template-columns: 1fr; }
+  .legal-nav { position: static; flex-direction: row; flex-wrap: wrap; }
+  .legal-nav__title { width: 100%; }
+}
