@@ -364,9 +364,19 @@
   .trust { border-left: none !important; }
   .trust + .trust { border-top: 1px solid var(--color-border); }
 }
-/* На телефоні ховаємо плаваючі декор-елементи, щоб не обрізались */
+/* На телефоні плаваючі елементи лишаються, але «сідають» у кути фото —
+   позиції всередині рамки, тож нічого не обрізається */
 @media (max-width: 640px) {
-  .hero__badge { display: none; }
-  .bdeco { display: none; }
-  .hero__media::before { display: none; }
+  .hero__media::before { display: none; }   /* м'який блоб-фон прибираємо, щоб не давав горизонтальний виступ */
+  .hero__badge { width: 46px; }
+  .hero__badge--book  { top: 10px;    left: 10px;   }
+  .hero__badge--cap   { top: 42%;     left: 10px;  width: 40px; }
+  .hero__badge--bulb  { bottom: 10px; right: 10px; width: 42px; }
+  .hero__badge--globe { top: 10px;    right: 10px; width: 44px; }
+
+  /* Декор у секції «Переваги» — теж у безпечних кутах, без виступів */
+  .bdeco { display: block; }
+  .bdeco--1 { width: 44px; top: 12px;    left: 10px;  transform: rotate(-16deg); opacity: .28; }
+  .bdeco--4 { width: 76px; bottom: 12px; right: 10px; opacity: .42; }
+  .bdeco--2, .bdeco--3, .bdeco--5 { display: none; }
 }

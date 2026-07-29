@@ -246,9 +246,22 @@
     background: var(--color-bg-lavender);
     display: none;
     min-width: 0;
-    margin-top: var(--space-1);
+    margin: var(--space-1) 0 var(--space-2);
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-accent-blue);   /* показує, що це підпункти */
   }
   .nav__item--open .nav__dropdown { display: block; }
+  /* Підпункти в мобільному меню — великі, читабельні, зі своїм відступом */
+  .nav__dropdown a {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--fs-body);
+    font-weight: 600;
+    color: var(--color-primary-deep);
+    border-radius: var(--radius-sm);
+  }
+  .nav__dropdown a:hover,
+  .nav__dropdown a:active { background: #fff; }
 
   .nav__item--mobile-cta { display: block; }
 }
@@ -465,7 +478,10 @@ body.no-scroll { overflow: hidden; }
   .page-hero__deco--3, .page-hero__deco--4 { display: none; }
 }
 @media (max-width: 600px) {
-  .page-hero__deco { display: none; }
+  /* лишаємо два елементи в кутах — маленькі й повністю видимі, без обрізки */
+  .page-hero__deco--1 { width: 40px; top: 10px;    left: 10px;  }
+  .page-hero__deco--2 { width: 40px; bottom: 10px; right: 10px; }
+  .page-hero__deco--3, .page-hero__deco--4 { display: none; }
 }
 
 /* Двоколонковий блок фото+текст */
@@ -562,3 +578,21 @@ body.no-scroll { overflow: hidden; }
 .testimonial--shot:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 .testimonial__shot { width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: #fff; display: block; }
 .testimonial__cap { font-family: var(--font-head); font-weight: 600; font-size: var(--fs-label); color: var(--color-text-muted); text-align: center; }
+
+/* ============================================================
+   ПОЯВА ПРИ СКРОЛІ (scroll-reveal)
+   Клас .reveal додається скриптом main.js. Якщо JS вимкнено —
+   класу немає, контент видно одразу (безпечно для SEO і доступності).
+   ============================================================ */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .6s var(--ease-out), transform .6s var(--ease-out);
+    will-change: opacity, transform;
+  }
+  .reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+}

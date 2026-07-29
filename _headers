@@ -9,15 +9,15 @@
 /assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
-# CSS і JS — кеш на добу (щоб правки швидко доїжджали до людей)
+# CSS, JS і дані — завжди перевіряти свіжість (щоб правки з'являлися одразу)
 /assets/css/*
-  Cache-Control: public, max-age=86400, must-revalidate
+  Cache-Control: public, no-cache
 
 /assets/js/*
-  Cache-Control: public, max-age=86400, must-revalidate
+  Cache-Control: public, no-cache
 
 /assets/data/*
-  Cache-Control: public, max-age=3600, must-revalidate
+  Cache-Control: public, no-cache
 
 # Базова безпека для всіх сторінок
 /*

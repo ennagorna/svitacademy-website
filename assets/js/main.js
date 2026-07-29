@@ -66,3 +66,38 @@ window.initHeader = function () {
     }
   });
 };
+
+/* ============================================================
+   Поява елементів при скролі (scroll-reveal)
+   Працює на всіх сторінках — main.js підключений усюди.
+   ============================================================ */
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
+
+  const selector = [
+    '.course-card', '.benefit', '.audience', '.perk', '.club-perk',
+    '.month-card', '.topic-card', '.week-card', '.idea-step', '.level-card',
+    '.media-split', '.offer', '.pricing__card', '.plan', '.year-plan',
+    '.testimonial', '.aud-chip', '.cta-banner', '.trustbar__card'
+  ].join(', ');
+
+  const els = document.querySelectorAll(selector);
+  if (!els.length) return;
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  els.forEach((el, i) => {
+    el.classList.add('reveal');
+    // невелика хвиля-затримка для сусідніх карток
+    el.style.transitionDelay = (Math.min(i % 4, 3) * 70) + 'ms';
+    io.observe(el);
+  });
+});
