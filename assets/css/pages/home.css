@@ -364,3 +364,9 @@
   .trust { border-left: none !important; }
   .trust + .trust { border-top: 1px solid var(--color-border); }
 }
+/* На телефоні ховаємо плаваючі декор-елементи, щоб не обрізались */
+@media (max-width: 640px) {
+  .hero__badge { display: none; }
+  .bdeco { display: none; }
+  .hero__media::before { display: none; }
+}

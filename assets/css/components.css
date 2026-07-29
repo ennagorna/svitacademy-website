@@ -212,19 +212,23 @@
 
 /* ---------- Адаптив хедера ---------- */
 @media (max-width: 1023px) {
-  .header__inner { min-height: 72px; gap: var(--space-4); }
+  /* На мобільному прибираємо blur — інакше він ламає позиціонування меню */
+  .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; background: #fff; }
+  .header__inner { min-height: 64px; gap: var(--space-3); }
   .header__burger { display: inline-flex; }
   .header__actions .btn--cta { display: none; }
 
   .nav {
     position: fixed;
-    inset: 72px 0 0 0;
+    inset: 64px 0 0 0;
+    z-index: var(--z-modal);
     margin: 0;
     background: #fff;
     padding: var(--space-4);
     overflow-y: auto;
     transform: translateX(100%);
     transition: transform var(--dur-base) var(--ease-out);
+    box-shadow: -8px 0 24px rgba(41,34,129,.12);
   }
   .nav[data-open="true"] { transform: translateX(0); }
 
@@ -459,6 +463,9 @@ body.no-scroll { overflow: hidden; }
 @media (max-width: 720px) {
   .page-hero__deco--1, .page-hero__deco--2 { width: 54px; }
   .page-hero__deco--3, .page-hero__deco--4 { display: none; }
+}
+@media (max-width: 600px) {
+  .page-hero__deco { display: none; }
 }
 
 /* Двоколонковий блок фото+текст */

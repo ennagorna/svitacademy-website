@@ -30,7 +30,7 @@ const HEADER_HTML = `
           </a>
           <div class="nav__dropdown">
             <a href="/klub-tvorchiy-vchytel.html">Клуб «Творчий Вчитель»</a>
-            <a href="/litniy-klub-repetytoram.html">Літній клуб для репетиторів</a>
+            <a href="/litniy-klub-repetytoram.html">Клуб «Перший крок до школи»</a>
           </div>
         </li>
         <li class="nav__item" data-dropdown>

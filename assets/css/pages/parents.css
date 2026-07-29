@@ -36,6 +36,7 @@
 .p-deco--bl { bottom: 26px; left: 4%; }
 .p-deco--br { bottom: -26px; right: -28px; }
 @media (max-width: 800px) { .p-deco--tr, .p-deco--bl { display: none; } }
+@media (max-width: 600px) { .p-deco { display: none; } }
 
 /* Для кого програма */
 .forwhom {
