@@ -67,6 +67,27 @@
 .ai-hero__actions { display: flex; justify-content: center; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-2); }
 .ai-hero__note { margin-top: var(--space-5); font-size: var(--fs-small); color: rgba(255,255,255,.7); }
 
+/* ---------- Банер «Придбати повний курс» ---------- */
+.section--tight { padding-block: var(--space-6); }
+.ai-buybanner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-6); flex-wrap: wrap;
+  background: linear-gradient(135deg, var(--color-primary-deep), var(--color-primary-indigo));
+  border-radius: var(--radius-lg); padding: var(--space-8); color: #fff;
+}
+.ai-buybanner h2 { color: #fff; margin-top: var(--space-3); }
+.ai-buybanner p { color: rgba(255,255,255,.85); margin-top: var(--space-2); max-width: 46ch; }
+.ai-buybanner__buy { flex-shrink: 0; text-align: center; }
+.ai-buybanner__price { display: flex; align-items: baseline; justify-content: center; gap: var(--space-2); margin-bottom: var(--space-3); }
+.ai-buybanner__price .ai-plan__old { color: rgba(255,255,255,.6); }
+.ai-buybanner__now { font-family: var(--font-head); font-weight: 700; font-size: 2.5rem; color: #fff; line-height: 1; }
+@media (max-width: 700px) {
+  .ai-buybanner { flex-direction: column; align-items: flex-start; }
+  .ai-buybanner__buy { width: 100%; }
+  .ai-buybanner__buy .btn { width: 100%; }
+  .ai-buybanner__price { justify-content: flex-start; }
+}
+
 /* ---------- ДВІ ПАНЕЛІ (хто / болі, формат) ---------- */
 .ai-two { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
 .ai-panel {

@@ -9,13 +9,32 @@ window.initHeader = function () {
   const nav = document.getElementById('site-nav');
   const isMobile = () => window.matchMedia('(max-width: 1023px)').matches;
 
+  /* --- Фіксація позиції сторінки, поки відкрите меню --- */
+  let savedScrollY = 0;
+  function lockScroll() {
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.classList.add('no-scroll');
+  }
+  function unlockScroll() {
+    document.body.classList.remove('no-scroll');
+    document.body.style.top = '';
+    window.scrollTo(0, savedScrollY);
+  }
+  function closeMenu() {
+    if (!nav) return;
+    nav.setAttribute('data-open', 'false');
+    burger?.setAttribute('aria-expanded', 'false');
+    unlockScroll();
+  }
+
   /* --- Бургер: відкрити/закрити меню --- */
   if (burger && nav) {
     burger.addEventListener('click', () => {
       const open = nav.getAttribute('data-open') === 'true';
       nav.setAttribute('data-open', String(!open));
       burger.setAttribute('aria-expanded', String(!open));
-      document.body.classList.toggle('no-scroll', !open);
+      if (!open) { lockScroll(); } else { unlockScroll(); }
     });
   }
 
@@ -46,22 +65,22 @@ window.initHeader = function () {
     });
   });
 
+  /* --- Клік по підпункту меню закриває меню (моб.) --- */
+  nav?.querySelectorAll('.nav__dropdown a, .nav__link:not([aria-haspopup])').forEach(link => {
+    link.addEventListener('click', () => { if (isMobile()) closeMenu(); });
+  });
+
   /* --- Escape закриває все --- */
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
     dropdowns.forEach(d => d.classList.remove('nav__item--open'));
-    if (nav && nav.getAttribute('data-open') === 'true') {
-      nav.setAttribute('data-open', 'false');
-      burger?.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('no-scroll');
-    }
+    if (nav && nav.getAttribute('data-open') === 'true') closeMenu();
   });
 
   /* --- Скидаємо стан меню при переході на десктоп --- */
   window.addEventListener('resize', () => {
     if (!isMobile() && nav) {
-      nav.setAttribute('data-open', 'false');
-      document.body.classList.remove('no-scroll');
+      closeMenu();
       dropdowns.forEach(d => d.classList.remove('nav__item--open'));
     }
   });

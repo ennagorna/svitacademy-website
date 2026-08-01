@@ -238,6 +238,8 @@
 
   .nav__dropdown {
     position: static;
+    left: auto;
+    right: auto;
     transform: none;
     opacity: 1;
     visibility: visible;
@@ -245,7 +247,10 @@
     border: none;
     background: var(--color-bg-lavender);
     display: none;
+    width: 100%;
     min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
     margin: var(--space-1) 0 var(--space-2);
     padding: var(--space-2);
     border-radius: var(--radius-md);
@@ -266,8 +271,16 @@
   .nav__item--mobile-cta { display: block; }
 }
 
-/* Блокування скролу під відкрите меню */
-body.no-scroll { overflow: hidden; }
+/* Блокування скролу під відкрите меню.
+   position:fixed + top тримає сторінку рівно на місці (важливо для iOS Safari,
+   де overflow:hidden не фіксує позицію і сайт «стрибає» вгору). */
+body.no-scroll {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
 /* ============================================================
    FOOTER
