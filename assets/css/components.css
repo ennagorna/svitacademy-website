@@ -256,7 +256,10 @@
     border-radius: var(--radius-md);
     border-left: 3px solid var(--color-accent-blue);   /* показує, що це підпункти */
   }
-  .nav__item--open .nav__dropdown { display: block; }
+  /* transform:none ОБОВ'ЯЗКОВО тут: перебиває глобальне
+     .nav__item--open .nav__dropdown { transform: translateX(-50%) } з десктопу,
+     яке інакше зсувало відкрите підменю вліво і обрізало його. */
+  .nav__item--open .nav__dropdown { display: block; transform: none; left: auto; right: auto; }
   /* Підпункти в мобільному меню — великі, читабельні, зі своїм відступом */
   .nav__dropdown a {
     padding: var(--space-3) var(--space-4);
