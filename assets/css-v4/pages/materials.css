@@ -1,0 +1,71 @@
+/* ============================================================
+   Svit Academy — materials.css (каталог навчальних матеріалів)
+   ============================================================ */
+
+/* Панель фільтрів */
+.materials-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+.filter-btn {
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: #fff;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: var(--fs-small);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.filter-btn:hover { border-color: var(--color-accent-blue); }
+.filter-btn--active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+
+.materials-count { text-align: center; color: var(--color-text-muted); font-size: var(--fs-small); margin-bottom: var(--space-6); }
+
+/* Сітка карток */
+.mat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.mat-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--color-accent-blue); }
+.mat-card__media { position: relative; aspect-ratio: 1 / 1; overflow: hidden; background: var(--color-bg-lavender); }
+.mat-card__img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform var(--dur-base) var(--ease-out); }
+.mat-card:hover .mat-card__img { transform: scale(1.05); }
+.mat-card__body { padding: var(--space-4); display: flex; flex-direction: column; flex: 1; }
+.mat-card__title { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-body); margin-bottom: var(--space-2); line-height: 1.25; }
+.mat-card__desc { font-size: var(--fs-small); color: var(--color-text-muted); flex: 1; line-height: 1.5; }
+.mat-card__foot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-4); }
+.mat-card__price { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; color: var(--color-primary-deep); white-space: nowrap; }
+.mat-card__foot .btn { min-height: 40px; padding: 8px 16px; font-size: var(--fs-small); }
+
+/* Банер роздрібного магазину */
+.retail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  background: linear-gradient(135deg, var(--color-accent-blue), var(--color-primary-indigo));
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+}
+.retail__text h2 { color: #fff; }
+.retail__text p { color: rgba(255,255,255,.9); margin-top: var(--space-2); max-width: 52ch; }
+.retail img { width: 64px; height: 64px; }
+.retail__row { display: flex; align-items: center; gap: var(--space-4); }

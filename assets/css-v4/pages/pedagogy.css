@@ -1,0 +1,56 @@
+/* ============================================================
+   Svit Academy — pedagogy.css (хаб «Курси для педагогів»)
+   ============================================================ */
+
+/* Великі картки-напрями */
+.offer {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out);
+}
+.offer:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: var(--color-accent-blue); }
+.offer + .offer { margin-top: var(--space-6); }
+.offer--reverse .offer__media { order: 2; }
+
+.offer__media { position: relative; min-height: 300px; overflow: hidden; }
+.offer__media img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+.offer:hover .offer__media img { transform: scale(1.04); }
+
+.offer__body { padding: var(--space-8); display: flex; flex-direction: column; }
+.offer__tagline { color: var(--color-primary); font-family: var(--font-head); font-weight: 600; font-size: var(--fs-small); }
+.offer__title { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-h2); margin: var(--space-2) 0 var(--space-3); }
+.offer__desc { color: var(--color-text-muted); }
+.offer__list { display: flex; flex-direction: column; gap: var(--space-2); margin: var(--space-5) 0; }
+.offer__list li { display: flex; gap: var(--space-2); font-size: var(--fs-small); line-height: 1.5; }
+.offer__list svg { flex-shrink: 0; color: #639922; margin-top: 3px; }
+.offer__foot { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; margin-top: auto; }
+.offer__price { font-family: var(--font-head); font-weight: 700; font-size: 1.375rem; color: var(--color-primary-deep); white-space: nowrap; }
+.offer__price small { display: block; font-size: var(--fs-small); color: var(--color-text-muted); font-weight: 400; }
+.offer__actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+@media (max-width: 800px) {
+  .offer { grid-template-columns: 1fr; }
+  .offer--reverse .offer__media { order: 0; }
+  .offer__media { min-height: 240px; }
+  .offer__body { padding: var(--space-6); }
+}
+
+/* Переваги для педагогів */
+.perk { text-align: center; padding: var(--space-5); border: 1px solid transparent; border-radius: var(--radius-lg); transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out); }
+.perk:hover { transform: translateY(-4px); background: #fff; border-color: var(--color-border); box-shadow: var(--shadow-hover); }
+.perk__ico { width: 64px; height: 64px; margin: 0 auto var(--space-3); display: block; transition: transform var(--dur-base) var(--ease-out); }
+.perk:hover .perk__ico { transform: scale(1.12); }
+.perk h3 { font-size: var(--fs-body); margin-bottom: 6px; }
+.perk p { font-size: var(--fs-small); color: var(--color-text-muted); }

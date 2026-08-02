@@ -1,0 +1,52 @@
+/* ============================================================
+   Svit Academy — oksana.css (персональна сторінка засновниці)
+   ============================================================ */
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-5);
+  align-items: stretch;
+}
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.promo-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--color-accent-blue); }
+.promo-card--featured { border: 2px solid var(--color-primary); }
+.promo-card__badge { position: absolute; top: var(--space-3); left: var(--space-3); z-index: 2; }
+
+.promo-card__media { aspect-ratio: 1 / 1; background: var(--color-bg-lavender); overflow: hidden; }
+.promo-card__media img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform var(--dur-base) var(--ease-out); }
+.promo-card:hover .promo-card__media img { transform: scale(1.04); }
+
+/* Медіа-блок з іконкою (для телеграм-каналу без обкладинки) */
+.promo-card__media--icon {
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary-deep), var(--color-primary-indigo));
+  color: #fff;
+}
+.promo-card__media--icon svg { width: 88px; height: 88px; }
+
+.promo-card__body { padding: var(--space-5); display: flex; flex-direction: column; flex: 1; }
+.promo-card__title { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-h3); margin-bottom: var(--space-2); line-height: 1.25; }
+.promo-card__desc { font-size: var(--fs-small); color: var(--color-text-muted); flex: 1; line-height: 1.55; margin-bottom: var(--space-4); }
+.promo-card .btn { width: 100%; }
+
+/* Соцмережі блок */
+.oksana-socials { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+.oksana-social {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: 12px 22px; border-radius: var(--radius-full);
+  border: 1px solid var(--color-border); background: #fff;
+  font-family: var(--font-head); font-weight: 600; font-size: var(--fs-small);
+  transition: transform var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.oksana-social:hover { transform: translateY(-2px); border-color: var(--color-accent-blue); box-shadow: var(--shadow-sm); text-decoration: none; }
+.oksana-social svg { color: var(--color-primary); }

@@ -1,0 +1,382 @@
+/* ============================================================
+   Svit Academy — home.css (стилі тільки для головної сторінки)
+   ============================================================ */
+
+/* Плейсхолдер для фото, поки не додані реальні файли */
+.ph {
+  background: var(--color-bg-lavender);
+  background-image: linear-gradient(135deg, var(--color-bg-lavender), var(--color-bg-blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+  text-align: center;
+}
+
+/* Зелена пігулка-тег */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-green);
+  color: #4a6b13;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: var(--fs-small);
+}
+
+/* Надрядок над секцією */
+.section-kicker {
+  display: block;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: var(--fs-small);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(180deg, var(--color-bg-lavender), var(--color-bg));
+  padding-block: var(--space-10) var(--space-8);
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: var(--space-8);
+}
+.hero__title {
+  font-size: var(--fs-display);
+  line-height: 1.08;
+  margin: var(--space-4) 0;
+}
+.hero__title span { color: var(--color-primary); display: block; }
+.hero__text {
+  font-size: var(--fs-lead);
+  color: var(--color-text-muted);
+  max-width: 46ch;
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+.hero__media { position: relative; }
+.hero__photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+/* М'який блоб-фон за фото (легкий CSS-градієнт) */
+.hero__media::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -12% -8% -8% -8%;
+  background:
+    radial-gradient(42% 46% at 72% 30%, rgba(69,54,202,.20), transparent 70%),
+    radial-gradient(40% 44% at 30% 78%, rgba(13,175,235,.18), transparent 70%),
+    radial-gradient(34% 38% at 82% 82%, rgba(163,219,51,.18), transparent 70%);
+  filter: blur(6px);
+  pointer-events: none;
+}
+/* Плаваючі 3D-ілюстрації з набору */
+.hero__badge {
+  position: absolute;
+  z-index: 2;
+  width: 74px;
+  height: auto;
+  filter: drop-shadow(0 10px 18px rgba(41,34,129,.20));
+  animation: floaty 5s ease-in-out infinite;
+}
+.hero__badge--book  { top: 2%;   left: -24px; animation-delay: 0s; }
+.hero__badge--cap   { top: 40%;  left: -32px; width: 60px; animation-delay: .5s; }
+.hero__badge--bulb  { bottom: 4%; right: 2%;  animation-delay: 1s; }
+.hero__badge--globe { top: -7%;  right: 12%;  width: 64px; animation-delay: 1.5s; }
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+@media (prefers-reduced-motion: reduce) { .hero__badge { animation: none; } }
+
+/* Іконки-набору для переваг і трастбару (мають власні тінтовані кола) */
+.benefit__ico { width: 66px; height: 66px; display: block; margin-bottom: var(--space-4); }
+.trust__ico   { width: 56px; height: 56px; flex-shrink: 0; }
+
+/* ---------- ТРАСТБАР / СТАТИСТИКА ---------- */
+.trustbar {
+  margin-top: var(--space-4);   /* опущено нижче, з відступом від кнопок героя */
+  position: relative;
+  z-index: 2;
+}
+.trustbar__card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.trust {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-5);
+}
+.trust + .trust { border-left: 1px solid var(--color-border); }
+.trust__icon {
+  flex-shrink: 0;
+  width: 52px; height: 52px;
+  border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+}
+.trust__icon svg { width: 26px; height: 26px; }
+.trust__text { min-width: 0; }
+/* Заголовок — один рядок, підпис — один рядок, рівні по всіх колонках */
+.trust__num {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+.trust__label {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  line-height: 1.3;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* Кольорові варіанти іконок */
+.i-violet { background: var(--color-bg-lavender); color: var(--color-primary); }
+.i-blue   { background: var(--color-bg-blue);     color: var(--color-accent-blue); }
+.i-green  { background: var(--color-bg-green);    color: #639922; }
+.i-orange { background: var(--color-bg-orange);   color: var(--color-cta); }
+
+/* ---------- КАРТКИ-АУДИТОРІЇ ---------- */
+.audience {
+  display: block;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.audience:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); text-decoration: none; }
+.audience__icon { transition: transform var(--dur-base) var(--ease-out); }
+.audience:hover .audience__icon { transform: scale(1.1) rotate(-3deg); }
+.audience--kids    { background: var(--color-bg-blue); }
+.audience--parents { background: var(--color-bg-lavender); }
+.audience--teachers{ background: var(--color-bg-orange); }
+.audience--materials{ background: var(--color-bg-green); }
+.audience__icon {
+  width: 52px; height: 52px;
+  border-radius: var(--radius-md);
+  background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: var(--space-4);
+}
+.audience__icon svg { width: 28px; height: 28px; }
+.audience__title { color: var(--color-text); margin-bottom: var(--space-2); }
+.audience__desc { color: var(--color-text-muted); font-size: var(--fs-small); }
+.audience__link {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: var(--space-4);
+  color: var(--color-primary);
+  font-family: var(--font-head); font-weight: 600; font-size: var(--fs-small);
+}
+.audience:hover .audience__link { gap: 10px; }
+
+/* ---------- КАРТКИ КУРСІВ ---------- */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.course-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.course-card__media { position: relative; aspect-ratio: 16 / 10; }
+.course-card__img { width: 100%; height: 100%; object-fit: cover; }
+.course-card__badges { position: absolute; top: var(--space-3); left: var(--space-3); display: flex; gap: 6px; }
+.course-card__body { padding: var(--space-4); display: flex; flex-direction: column; flex: 1; }
+.course-card__title { font-size: var(--fs-body); font-weight: 700; font-family: var(--font-head); margin-bottom: var(--space-2); }
+.course-card__desc { font-size: var(--fs-small); color: var(--color-text-muted); flex: 1; }
+.course-card__foot {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+.course-card__price {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-primary-deep);
+  white-space: nowrap;      /* цифри + валюта завжди в один рядок */
+  flex-shrink: 0;
+}
+.course-card__foot .btn { flex-shrink: 0; }
+
+/* ---------- ПЕРЕВАГИ ---------- */
+.benefit {
+  text-align: left;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.benefit:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--color-accent-blue); }
+.benefit__ico { transition: transform var(--dur-base) var(--ease-out); }
+.benefit:hover .benefit__ico { transform: scale(1.1); }
+.benefit__icon {
+  width: 60px; height: 60px;
+  border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: var(--space-4);
+}
+.benefit__icon svg { width: 30px; height: 30px; }
+.benefit__title { font-size: var(--fs-body); font-weight: 700; font-family: var(--font-head); margin-bottom: 6px; }
+.benefit__desc { font-size: var(--fs-small); color: var(--color-text-muted); }
+
+/* Секція переваг: м'який фон + декоративні елементи з набору */
+.section--benefits {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg-lavender);
+}
+.section--benefits .container { position: relative; z-index: 1; }
+.bdeco { position: absolute; z-index: 0; pointer-events: none; }
+.bdeco--1 { width: 68px;  top: 44px;    left: -16px;  transform: rotate(-18deg); opacity: .30; }
+.bdeco--2 { width: 52px;  bottom: 40px; left: 5%;     transform: rotate(14deg);  opacity: .26; }
+.bdeco--3 { width: 60px;  top: 24px;    right: 4%;    transform: rotate(20deg);  opacity: .26; }
+.bdeco--4 { width: 128px; bottom: -26px; right: -30px; opacity: .5; }
+.bdeco--5 { width: 90px;  top: -22px;   right: 20%;   opacity: .4; }
+@media (max-width: 900px) {
+  .bdeco--2, .bdeco--3, .bdeco--5 { display: none; }
+}
+
+/* ---------- ТИЗЕР КЛУБУ ---------- */
+.club-teaser {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: var(--space-8);
+  background: linear-gradient(135deg, var(--color-primary-deep), var(--color-primary-indigo));
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  color: #fff;
+  overflow: hidden;
+}
+.club-teaser h2 { color: #fff; }
+.club-teaser p { color: rgba(255,255,255,.85); margin: var(--space-3) 0 var(--space-5); }
+.club-teaser__photo { border-radius: var(--radius-md); aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+
+/* ---------- БЛОК ОКСАНИ ---------- */
+.founder {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: var(--space-8);
+}
+.founder__photo { border-radius: var(--radius-lg); aspect-ratio: 3/4; object-fit: cover; width: 100%; max-width: 340px; }
+.founder__quote { font-size: var(--fs-lead); line-height: 1.6; margin: var(--space-4) 0; }
+.founder__name { font-family: var(--font-head); font-weight: 700; }
+.founder__role { color: var(--color-text-muted); font-size: var(--fs-small); }
+
+/* ---------- ВІДГУКИ ---------- */
+.testimonial {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+.testimonial__quote-mark { color: var(--color-accent-blue); font-size: 2.5rem; line-height: 1; font-family: var(--font-head); }
+
+/* Масонрі-сітка відгуків — картки без «порожнеч» */
+.testi-masonry { column-count: 3; column-gap: var(--space-5); }
+.testi-masonry .testimonial { break-inside: avoid; margin-bottom: var(--space-5); }
+@media (max-width: 900px) { .testi-masonry { column-count: 2; } }
+@media (max-width: 560px) { .testi-masonry { column-count: 1; } }
+
+/* Варіант відгуку — реальний скріншот */
+.testimonial--shot {
+  display: flex; flex-direction: column; gap: var(--space-2);
+  background: var(--color-bg-lavender);
+  padding: var(--space-3);
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.testimonial--shot:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.testimonial__shot { width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: #fff; display: block; }
+.testimonial__cap { font-family: var(--font-head); font-weight: 600; font-size: var(--fs-label); color: var(--color-text-muted); text-align: center; }
+.testimonial__text { font-size: var(--fs-small); color: var(--color-text); line-height: 1.6; margin: var(--space-2) 0 var(--space-4); }
+.testimonial__author { display: flex; align-items: center; gap: var(--space-3); }
+.testimonial__avatar { width: 44px; height: 44px; border-radius: var(--radius-full); object-fit: cover; background: var(--color-bg-lavender); }
+.testimonial__name { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-small); }
+.testimonial__meta { color: var(--color-text-muted); font-size: var(--fs-label); }
+
+/* ---------- ФІНАЛЬНИЙ CTA-БАНЕР ---------- */
+.cta-banner {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-indigo));
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+}
+.cta-banner h2 { color: #fff; }
+.cta-banner p { color: rgba(255,255,255,.85); margin-top: var(--space-2); max-width: 48ch; }
+.cta-banner__actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+/* ---------- Карусель (проста, горизонтальний скрол на мобільному) ---------- */
+.carousel { position: relative; }
+
+/* ============================================================
+   Адаптив головної
+   ============================================================ */
+@media (max-width: 900px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__media { order: -1; }
+  .trustbar__card { grid-template-columns: 1fr 1fr; }
+  .trust:nth-child(3) { border-left: none; }
+  .trust:nth-child(odd) { border-left: none; }
+  .trust:nth-child(n+3) { border-top: 1px solid var(--color-border); }
+  .club-teaser, .founder { grid-template-columns: 1fr; }
+  .founder__photo { max-width: 100%; }
+  .cta-banner { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 560px) {
+  .trustbar__card { grid-template-columns: 1fr; }
+  .trust { border-left: none !important; }
+  .trust + .trust { border-top: 1px solid var(--color-border); }
+}
+/* На телефоні плаваючі елементи лишаються, але «сідають» у кути фото —
+   позиції всередині рамки, тож нічого не обрізається */
+@media (max-width: 640px) {
+  .hero__media::before { display: none; }   /* м'який блоб-фон прибираємо, щоб не давав горизонтальний виступ */
+  .hero__badge { width: 46px; }
+  .hero__badge--book  { top: 10px;    left: 10px;   }
+  .hero__badge--cap   { top: 42%;     left: 10px;  width: 40px; }
+  .hero__badge--bulb  { bottom: 10px; right: 10px; width: 42px; }
+  .hero__badge--globe { top: 10px;    right: 10px; width: 44px; }
+
+  /* Декор у секції «Переваги» — теж у безпечних кутах, без виступів */
+  .bdeco { display: block; }
+  .bdeco--1 { width: 44px; top: 12px;    left: 10px;  transform: rotate(-16deg); opacity: .28; }
+  .bdeco--4 { width: 76px; bottom: 12px; right: 10px; opacity: .42; }
+  .bdeco--2, .bdeco--3, .bdeco--5 { display: none; }
+}

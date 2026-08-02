@@ -1,0 +1,82 @@
+/* ============================================================
+   Svit Academy — Design Tokens
+   Єдине джерело правди для дизайну. Міняємо тут — міняється всюди.
+   ============================================================ */
+
+:root {
+  /* === Бренд === */
+  --color-primary:        #3628B0; /* акцент, кнопки, активні пункти */
+  --color-primary-deep:   #292281; /* хедер, футер, темні блоки */
+  --color-primary-indigo: #4536CA; /* градієнти, hover */
+  --color-cta:            #F25A09; /* ТІЛЬКИ головна CTA-кнопка */
+  --color-cta-hover:      #d94e05;
+  --color-accent-blue:    #0DAFEB; /* декор/іконки — не текст на білому */
+  --color-link:           #0A7B9E; /* текстові лінки */
+  --color-success:        #A3DB33; /* тільки фон бейджа під темний текст */
+  --color-warm:           #754811;
+
+  /* === Нейтральні === */
+  --color-bg:          #FFFFFF;
+  --color-bg-lavender: #F4F2FF;
+  --color-bg-blue:     #EEF8FF;
+  --color-bg-green:    #F4FAEA;
+  --color-bg-orange:   #FFF2E8;
+  --color-text:        #17152F;
+  --color-text-muted:  #5F6472;
+  --color-border:      #E7E7F2;
+
+  /* На темному фоні (хедер/футер) */
+  --color-on-dark:        #FFFFFF;
+  --color-on-dark-muted:  #C9C6EC;
+
+  /* === Типографіка === */
+  --font-head: 'Golos Text', system-ui, -apple-system, sans-serif;
+  --font-body: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+
+  --fs-display: clamp(2rem, 5vw, 3.5rem);
+  --fs-h1:      clamp(1.75rem, 3.5vw, 2.5rem);
+  --fs-h2:      clamp(1.5rem, 3vw, 2rem);
+  --fs-h3:      1.375rem;
+  --fs-lead:    1.125rem;
+  --fs-body:    1rem;
+  --fs-small:   0.875rem;
+  --fs-label:   0.8125rem;
+
+  /* === Spacing (крок 4/8) === */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-8: 48px; --space-10: 64px;
+  --space-section: 80px;
+
+  /* === Радіуси === */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* === Тіні (єдина шкала, фіолетовий відтінок) === */
+  --shadow-sm:    0 2px 8px  rgba(41,34,129,.06);
+  --shadow-card:  0 8px 24px rgba(41,34,129,.08);
+  --shadow-hover: 0 12px 32px rgba(41,34,129,.14);
+
+  /* === Layout === */
+  --container-max: 1200px;
+  --container-pad: 20px;
+  --header-h: 72px;
+
+  /* === Motion === */
+  --ease-out: cubic-bezier(.22,.61,.36,1);
+  --dur-fast: 180ms;
+  --dur-base: 240ms;
+
+  /* === Z-index шкала === */
+  --z-dropdown: 40;
+  --z-header:   100;
+  --z-modal:    1000;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --space-section: 48px;
+    --container-pad: 16px;
+  }
+}

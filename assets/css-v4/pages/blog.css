@@ -1,0 +1,65 @@
+/* ============================================================
+   Svit Academy — blog.css (список статей + сторінка статті)
+   ============================================================ */
+
+/* --- Список статей --- */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-5);
+}
+.post-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.post-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--color-accent-blue); }
+.post-card__media { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: var(--color-bg-lavender); }
+.post-card__media img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform var(--dur-base) var(--ease-out); }
+.post-card:hover .post-card__media img { transform: scale(1.05); }
+.post-card__body { padding: var(--space-5); display: flex; flex-direction: column; flex: 1; gap: var(--space-2); }
+.post-card__title { font-size: var(--fs-h3); line-height: 1.25; }
+.post-card__title a { color: var(--color-text); }
+.post-card__title a:hover { color: var(--color-primary); text-decoration: none; }
+.post-card__excerpt { font-size: var(--fs-small); color: var(--color-text-muted); flex: 1; line-height: 1.6; }
+.post-card__meta { font-size: var(--fs-label); color: var(--color-text-muted); }
+
+/* --- Сторінка статті --- */
+.article { max-width: 760px; margin-inline: auto; }
+.article__head { text-align: center; margin-bottom: var(--space-6); }
+.article__cat { margin-bottom: var(--space-3); }
+.article__title { margin: var(--space-3) 0; }
+.article__meta { color: var(--color-text-muted); font-size: var(--fs-small); }
+.article__cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--color-bg-lavender);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+}
+.article__body { font-size: var(--fs-lead); }
+.article__body p { line-height: 1.8; margin-bottom: var(--space-4); }
+.article__body h2 { font-size: var(--fs-h2); margin: var(--space-8) 0 var(--space-3); }
+.article__body h3 { font-size: var(--fs-h3); margin: var(--space-6) 0 var(--space-2); color: var(--color-primary-deep); }
+.article__body ul { margin: 0 0 var(--space-4) var(--space-5); list-style: disc; }
+.article__body li { margin-bottom: var(--space-2); line-height: 1.7; }
+.article__body strong { color: var(--color-text); }
+
+/* Автор */
+.author-box {
+  display: flex; align-items: center; gap: var(--space-4);
+  background: var(--color-bg-lavender);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-top: var(--space-8);
+}
+.author-box__avatar { width: 64px; height: 64px; border-radius: var(--radius-full); object-fit: cover; object-position: center top; flex-shrink: 0; }
+.author-box__name { font-family: var(--font-head); font-weight: 700; }
+.author-box__role { font-size: var(--fs-small); color: var(--color-text-muted); }
+
+.article__back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-head); font-weight: 600; font-size: var(--fs-small); margin-bottom: var(--space-5); }

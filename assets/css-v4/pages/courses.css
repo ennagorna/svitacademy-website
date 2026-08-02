@@ -1,0 +1,12 @@
+/* ============================================================
+   Svit Academy — courses.css (специфіка сторінок курсів)
+   Спільні блоки (page-hero, crosssell, plan, media-split) — у components.css
+   ============================================================ */
+
+/* Дрібний рядок під ціною/кнопкою */
+.course-card__note {
+  font-size: var(--fs-label);
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+  text-align: center;
+}
