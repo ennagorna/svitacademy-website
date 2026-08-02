@@ -25,6 +25,15 @@
   <link rel="stylesheet" href="/assets/css-v4/components.css">
   <link rel="stylesheet" href="/assets/css-v4/utilities.css">
   <link rel="stylesheet" href="/assets/css-v4/pages/blog.css">
+  <style id="nav-fix">
+  @media (max-width:1023px){
+    .nav__dropdown{position:static!important;left:auto!important;right:auto!important;
+      transform:none!important;width:100%!important;max-width:100%!important;
+      min-width:0!important;box-sizing:border-box!important;}
+    .nav__item--open .nav__dropdown{display:block!important;transform:none!important;
+      left:auto!important;right:auto!important;}
+  }
+  </style>
 </head>
 <body data-page="blog.html">
 
