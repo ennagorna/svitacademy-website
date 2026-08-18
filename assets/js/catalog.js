@@ -10,8 +10,8 @@
     { key: 'games',    label: 'Ігри' },
     { key: 'seasonal', label: 'Сезонні та свята' },
     { key: 'neuro',    label: 'Нейро' },
-    { key: 'camps',    label: 'Табірні програми' },
-    { key: 'reading',  label: 'Читання' }
+    { key: 'reading',  label: 'Читання' },
+    { key: 'camps',    label: 'Табірні програми' }
   ];
   var HASH = { sezonni: 'seasonal', tabirni: 'camps', igry: 'games', neuro: 'neuro', chytannya: 'reading' };
   var current = 'all';
