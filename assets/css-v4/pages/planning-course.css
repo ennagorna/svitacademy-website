@@ -1,0 +1,163 @@
+/* ============================================================
+   Svit Academy — planning-course.css
+   Лендінг марафону «Мистецтво планування»
+   ============================================================ */
+
+/* Кнопки, яких немає в базі */
+.btn--lg { min-height: 56px; padding: var(--space-4) var(--space-8); font-size: 1.0625rem; }
+.btn--block { width: 100%; }
+
+/* ---------- HERO ---------- */
+.mp-hero {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(55% 60% at 12% 8%, rgba(69,54,202,.14), transparent 60%),
+    radial-gradient(50% 55% at 92% 12%, rgba(13,175,235,.16), transparent 60%),
+    linear-gradient(180deg, var(--color-bg-lavender), var(--color-bg));
+  padding-block: var(--space-10) var(--space-10);
+}
+.mp-hero__grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: var(--space-8); align-items: center; position: relative; z-index: 1; }
+.mp-hero__kicker {
+  display: inline-block; font-family: var(--font-head); font-weight: 700;
+  font-size: var(--fs-small); letter-spacing: .04em; text-transform: uppercase;
+  color: var(--color-primary); max-width: 40ch;
+}
+.mp-hero__title { font-size: var(--fs-display); line-height: 1.05; margin: var(--space-3) 0; color: var(--color-primary-deep); }
+.mp-hero__lead { font-size: var(--fs-lead); color: var(--color-text-muted); max-width: 46ch; }
+.mp-hero__media img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); display: block; }
+.mp-hero__deco { position: absolute; z-index: 0; pointer-events: none; opacity: .8; }
+.mp-hero__deco--1 { width: 80px; bottom: 10%; left: 4%; transform: rotate(-8deg); }
+.mp-hero__deco--2 { width: 66px; top: 8%; right: 46%; }
+.mp-hero__stats { display: flex; gap: var(--space-5); margin-top: var(--space-5); flex-wrap: wrap; }
+.mp-hero__stats span { font-size: var(--fs-small); color: var(--color-text-muted); }
+.mp-hero__stats b { font-family: var(--font-head); font-size: 1.5rem; color: var(--color-primary-deep); margin-right: 4px; }
+
+/* ---------- ТАЙМЕР ---------- */
+.mp-timer {
+  background: #fff; border: 2px solid var(--color-cta);
+  border-radius: var(--radius-md); padding: var(--space-4) var(--space-5);
+  margin: var(--space-5) 0; text-align: center; max-width: 420px;
+  box-shadow: 0 8px 20px rgba(242,90,9,.14);
+}
+.mp-timer__label { font-family: var(--font-head); font-weight: 600; font-size: var(--fs-small); color: var(--color-text); margin-bottom: 6px; }
+.mp-timer__clock {
+  font-family: var(--font-head); font-weight: 700; font-variant-numeric: tabular-nums;
+  font-size: 2.5rem; line-height: 1; color: var(--color-cta); letter-spacing: .04em;
+}
+.mp-timer__expired { color: var(--color-cta); font-weight: 700; font-size: var(--fs-small); margin-top: 6px; }
+.mp-timer--compact { margin: var(--space-3) 0; padding: var(--space-3); max-width: none; display: flex; flex-direction: column; gap: 2px; }
+.mp-timer--compact .mp-timer__clock { font-size: 1.75rem; }
+.mp-timer__mini { font-size: var(--fs-label); color: var(--color-text-muted); }
+
+/* Коли час вийшов — приховуємо стару ціну, тьмяніє акція */
+body.mp-expired .mp-price__flag,
+body.mp-expired .mp-price__old,
+body.mp-expired .mp-sticky__old { text-decoration: line-through; opacity: .5; }
+body.mp-expired .mp-timer { border-color: var(--color-border); box-shadow: none; }
+
+/* ---------- ЧОМУ МАРАФОН ---------- */
+.mp-why { text-align: center; max-width: 760px; }
+.mp-why__text { font-size: var(--fs-lead); color: var(--color-text-muted); margin: var(--space-3) auto 0; }
+.mp-why__highlight {
+  font-family: var(--font-head); font-weight: 700; font-size: var(--fs-h3);
+  color: var(--color-primary); margin-top: var(--space-5);
+}
+
+/* ---------- ПРОГРАМА (5 ДНІВ) ---------- */
+.mp-days { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-5); }
+.mp-day {
+  background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+  padding: var(--space-6); border-top: 4px solid var(--color-accent-blue);
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.mp-day:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+.mp-day__num { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-label); text-transform: uppercase; letter-spacing: .06em; color: var(--color-primary); }
+.mp-day__num .num { font-size: 1.25rem; }
+.mp-day__title { font-size: var(--fs-h3); line-height: 1.25; margin: var(--space-2) 0 var(--space-3); }
+.mp-day__meta { font-size: var(--fs-small); color: var(--color-text-muted); line-height: 1.5; }
+.mp-day__res { font-size: var(--fs-small); font-family: var(--font-head); font-weight: 600; color: var(--color-primary-deep); margin-top: var(--space-3); }
+
+/* ---------- КОМУ ПІДІЙДЕ ---------- */
+.mp-aud { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-5); }
+.mp-aud__card {
+  background: var(--color-bg-orange); border-radius: var(--radius-lg); padding: var(--space-6);
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.mp-aud__card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.mp-aud__word { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-h3); color: var(--color-cta); display: block; margin-bottom: 6px; }
+.mp-aud__card p { color: var(--color-text); line-height: 1.5; }
+
+/* ---------- СТРІЧКА ---------- */
+.mp-marquee { overflow: hidden; background: var(--color-primary-deep); padding: var(--space-4) 0; }
+.mp-marquee__track {
+  display: inline-flex; gap: var(--space-6); white-space: nowrap;
+  font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; color: #fff;
+  animation: mp-scroll 22s linear infinite;
+}
+.mp-marquee__track span:nth-child(even) { color: var(--color-success); }
+@keyframes mp-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .mp-marquee__track { animation: none; } }
+
+/* ---------- ВАРТІСТЬ ---------- */
+.mp-price {
+  display: grid; grid-template-columns: 1fr .9fr; gap: 0;
+  border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.mp-price__left { padding: var(--space-8); }
+.mp-price__list { display: flex; flex-direction: column; gap: var(--space-3); }
+.mp-price__list li { position: relative; padding-left: 28px; line-height: 1.5; }
+.mp-price__list li::before {
+  content: ""; position: absolute; left: 0; top: 3px; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--color-bg-green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23639922' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat;
+}
+.mp-price__buy {
+  background: linear-gradient(160deg, var(--color-primary-deep), var(--color-primary-indigo));
+  color: #fff; padding: var(--space-8); text-align: center;
+  display: flex; flex-direction: column; justify-content: center; gap: var(--space-2);
+}
+.mp-price__flag { display: inline-block; align-self: center; background: var(--color-cta); color: #fff; font-family: var(--font-head); font-weight: 700; font-size: var(--fs-small); padding: 6px 16px; border-radius: var(--radius-full); }
+.mp-price__nums { display: flex; align-items: baseline; justify-content: center; gap: var(--space-3); margin-top: var(--space-2); }
+.mp-price__old { color: rgba(255,255,255,.6); text-decoration: line-through; font-size: 1.5rem; }
+.mp-price__now { font-family: var(--font-head); font-weight: 700; font-size: 3rem; line-height: 1; color: #fff; }
+.mp-price__buy .mp-timer { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.4); box-shadow: none; }
+.mp-price__buy .mp-timer__clock { color: #fff; }
+.mp-price__buy .mp-timer__mini { color: rgba(255,255,255,.8); }
+
+/* ---------- Q&A ---------- */
+.mp-faq { max-width: 780px; }
+.mp-faq__item { background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-4) var(--space-5); margin-bottom: var(--space-3); }
+.mp-faq__item summary { font-family: var(--font-head); font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: var(--space-3); }
+.mp-faq__item summary::after { content: "+"; color: var(--color-primary); font-weight: 700; font-size: 1.25rem; }
+.mp-faq__item[open] summary::after { content: "–"; }
+.mp-faq__item p { margin-top: var(--space-3); color: var(--color-text-muted); line-height: 1.6; }
+
+/* ---------- ЛИПКА ПАНЕЛЬ ---------- */
+.mp-sticky {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: var(--z-header);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  background: #fff; border-top: 1px solid var(--color-border);
+  padding: var(--space-3) var(--space-5); box-shadow: 0 -8px 24px rgba(41,34,129,.12);
+  transform: translateY(120%); transition: transform var(--dur-base) var(--ease-out);
+}
+.mp-sticky.is-visible { transform: translateY(0); }
+.mp-sticky__info { display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap; }
+.mp-sticky__old { color: var(--color-text-muted); text-decoration: line-through; font-size: var(--fs-small); }
+.mp-sticky__now { font-family: var(--font-head); font-weight: 700; font-size: 1.375rem; color: var(--color-primary-deep); }
+.mp-sticky__clock { font-family: var(--font-head); font-weight: 700; color: var(--color-cta); font-variant-numeric: tabular-nums; }
+
+/* ============================================================
+   Адаптив
+   ============================================================ */
+@media (max-width: 900px) {
+  .mp-hero__grid { grid-template-columns: 1fr; }
+  .mp-hero__media { order: -1; max-width: 420px; margin-inline: auto; }
+  .mp-hero__deco { display: none; }
+  .mp-price { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .mp-timer { max-width: none; }
+  .mp-sticky { padding: var(--space-3); }
+  .mp-sticky .btn { padding: var(--space-3) var(--space-4); }
+  .mp-sticky__info { gap: var(--space-2); }
+}
