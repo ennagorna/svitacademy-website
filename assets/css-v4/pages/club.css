@@ -63,3 +63,57 @@
 .club-perk__ico { flex-shrink: 0; width: 56px; height: 56px; }
 .club-perk h3 { font-size: var(--fs-body); margin-bottom: 4px; }
 .club-perk p { font-size: var(--fs-small); color: var(--color-text-muted); }
+
+/* ============================================================
+   ТАРИФИ КЛУБУ — дві підписки (місячна / річна)
+   ============================================================ */
+.btn--block { width: 100%; }
+
+.club-plans {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);
+  align-items: stretch; max-width: 900px; margin-inline: auto;
+}
+.club-plan {
+  position: relative; display: flex; flex-direction: column;
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-8) var(--space-6);
+  transition: transform .22s var(--ease-out), box-shadow .22s var(--ease-out), border-color .22s var(--ease-out);
+}
+.club-plan:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: var(--color-accent-blue); }
+.club-plan__name { font-size: var(--fs-h3); }
+.club-plan__sub { color: var(--color-text-muted); font-size: var(--fs-small); margin-top: 4px; }
+.club-plan__price { font-family: var(--font-head); font-weight: 700; font-size: 2.5rem; color: var(--color-primary-deep); margin: var(--space-4) 0; line-height: 1; }
+.club-plan__price small { display: block; font-size: var(--fs-small); font-weight: 600; color: var(--color-text-muted); margin-top: 6px; }
+.club-plan__list { display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-5); flex: 1; }
+.club-plan__list li { position: relative; padding-left: 26px; font-size: var(--fs-small); line-height: 1.5; }
+.club-plan__list li::before {
+  content: ""; position: absolute; left: 0; top: 3px; width: 17px; height: 17px; border-radius: 50%;
+  background: var(--color-bg-green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%23639922' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/11px no-repeat;
+}
+
+.club-plan--year {
+  border: 2px solid var(--color-cta);
+  box-shadow: 0 14px 34px rgba(242,90,9,.16);
+  background: linear-gradient(180deg, #ffffff, #fff8f3);
+}
+.club-plan--year:hover { border-color: var(--color-cta); transform: translateY(-6px) scale(1.015); }
+.club-plan__ribbon {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--color-cta); color: #fff; font-family: var(--font-head); font-weight: 700;
+  font-size: var(--fs-label); padding: 6px 18px; border-radius: var(--radius-full);
+  white-space: nowrap; box-shadow: 0 8px 18px rgba(242,90,9,.35);
+  animation: club-pulse 2.4s ease-in-out infinite;
+}
+@keyframes club-pulse { 0%,100% { transform: translateX(-50%) scale(1); } 50% { transform: translateX(-50%) scale(1.06); } }
+@media (prefers-reduced-motion: reduce) { .club-plan__ribbon { animation: none; } }
+.club-plan__save {
+  background: var(--color-bg-green); color: #3f5a12; font-family: var(--font-head); font-weight: 700;
+  font-size: var(--fs-small); text-align: center; padding: var(--space-3); border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+}
+.club-plans__note { text-align: center; max-width: 62ch; margin: var(--space-6) auto 0; color: var(--color-text-muted); font-size: var(--fs-small); }
+
+@media (max-width: 720px) {
+  .club-plans { grid-template-columns: 1fr; }
+  .club-plan--year { order: -1; }
+}
