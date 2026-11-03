@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Клуб «Творчий Вчитель» — щомісячна підписка для педагогів | Svit Academy</title>
+  <meta name="description" content="Клуб «Творчий Вчитель» — готові матеріали на кожен місяць навчального року: сценарії занять, конспекти, ігри та декор. Річна підписка 2450 грн або окремий місяць 450 грн.">
+  <link rel="canonical" href="https://svitacademy.com/klub-tvorchiy-vchytel.html">
+
+  <meta property="og:title" content="Клуб «Творчий Вчитель» — підписка для педагогів">
+  <meta property="og:description" content="Готові матеріали щомісяця: сценарії, конспекти, ігри та декор. Не вигоряйте від підготовки.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://svitacademy.com/klub-tvorchiy-vchytel.html">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/logo/favicon-512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css-v4/variables.css">
+  <link rel="stylesheet" href="/assets/css-v4/base.css">
+  <link rel="stylesheet" href="/assets/css-v4/layout.css">
+  <link rel="stylesheet" href="/assets/css-v4/components.css">
+  <link rel="stylesheet" href="/assets/css-v4/utilities.css">
+  <link rel="stylesheet" href="/assets/css-v4/pages/club.css">
+  <style id="nav-fix">
+  /* Критичний фікс мобільного підменю — вбудований у head, тож працює
+     навіть якщо зовнішній CSS завантажився зі старого кешу. */
+  @media (max-width:1023px){
+    .nav__dropdown{position:static!important;left:auto!important;right:auto!important;
+      transform:none!important;width:100%!important;max-width:100%!important;
+      min-width:0!important;box-sizing:border-box!important;}
+    .nav__item--open .nav__dropdown{display:block!important;transform:none!important;
+      left:auto!important;right:auto!important;}
+  }
+  </style>
+</head>
+<body data-page="kursy-dlya-pedagogiv.html">
+
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- ========== ШАПКА ========== -->
+    <section class="page-hero">
+      <img class="page-hero__deco page-hero__deco--1" src="/assets/img/icons/icon3d-books.webp" alt="" aria-hidden="true">
+      <img class="page-hero__deco page-hero__deco--2" src="/assets/img/icons/icon3d-pencils.webp" alt="" aria-hidden="true">
+      <img class="page-hero__deco page-hero__deco--3" src="/assets/img/icons/puzzle-green.svg" alt="" aria-hidden="true">
+      <img class="page-hero__deco page-hero__deco--4" src="/assets/img/icons/puzzle-orange.svg" alt="" aria-hidden="true">
+      <div class="container page-hero__inner">
+        <span class="eyebrow">Підписка для педагогів</span>
+        <h1>Клуб «Творчий Вчитель»</h1>
+        <p class="page-hero__text">Готові матеріали на кожен місяць навчального року — щоб завжди мати що показати дітям і не вигоряти від постійної підготовки.</p>
+        <div class="flex-center gap-3 flex-wrap mt-6">
+          <a class="btn btn--cta" href="#tarify">Приєднатись на рік</a>
+          <a class="btn btn--outline" href="#tarify">Дивитись тарифи</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ПРО КЛУБ ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="media-split">
+          <div class="media-split__media">
+            <img class="media-split__img ph" src="/assets/img/team/team-workshop.webp" alt="Педагоги Svit Academy на майстер-класі" width="440" height="550" loading="lazy">
+          </div>
+          <div class="media-split__body">
+            <span class="section-kicker">Про клуб</span>
+            <h2>Підготовка, яка більше не з'їдає вечори</h2>
+            <p class="mt-3">«Творчий Вчитель» — це щомісячна підписка для педагогів і вихователів. Щомісяця ви отримуєте готовий пакет матеріалів під нову тему: бери й проводь заняття вже завтра.</p>
+            <p class="mt-3">Один раз оформили підписку — і весь навчальний рік маєте що показати дітям, без нічних збирань матеріалів по крихтах.</p>
+            <a class="btn btn--cta mt-4" href="#tarify">Обрати підписку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ЩО ВХОДИТЬ ========== -->
+    <section class="section section--lavender">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Що ви отримуєте щомісяця</span>
+          <h2>Готовий комплект під нову тему</h2>
+        </div>
+        <div class="grid grid--auto-4">
+          <div class="club-perk"><img class="club-perk__ico" src="/assets/img/icons/icon3d-book.webp" alt=""><div><h3>Сценарії занять</h3><p>Покрокові плани, за якими легко провести заняття.</p></div></div>
+          <div class="club-perk"><img class="club-perk__ico" src="/assets/img/icons/icon3d-pencils.webp" alt=""><div><h3>Конспекти</h3><p>Структуровані матеріали під тему місяця.</p></div></div>
+          <div class="club-perk"><img class="club-perk__ico" src="/assets/img/icons/icon3d-globe.webp" alt=""><div><h3>Ігри</h3><p>Готові ігрові активності для дітей.</p></div></div>
+          <div class="club-perk"><img class="club-perk__ico" src="/assets/img/icons/icon3d-lightbulb.webp" alt=""><div><h3>Декор</h3><p>Оформлення простору під тему й свята.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ТАРИФИ ========== -->
+    <section class="section" id="tarify">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Тарифи</span>
+          <h2>Оберіть свою підписку</h2>
+          <p>Дві прості опції — на місяць або одразу на весь навчальний рік.</p>
+        </div>
+
+        <div class="club-plans">
+
+          <!-- Місячна -->
+          <article class="club-plan">
+            <h3 class="club-plan__name">Місячна підписка</h3>
+            <p class="club-plan__sub">Пакет матеріалів на поточний місяць</p>
+            <div class="club-plan__price"><span class="num">450</span> грн<small>/місяць</small></div>
+            <ul class="club-plan__list">
+              <li>Сценарії, конспекти, ігри та декор</li>
+              <li>Нова тема щомісяця</li>
+              <li>Гнучко: оформлюєте на потрібний місяць</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="https://secure.wayforpay.com/button/bfbccb54a5cf7" target="_blank" rel="noopener">Оформити на місяць</a>
+          </article>
+
+          <!-- Річна (найвигідніша) -->
+          <article class="club-plan club-plan--year">
+            <span class="club-plan__ribbon">🔥 Найвигідніше</span>
+            <h3 class="club-plan__name">Річна підписка</h3>
+            <p class="club-plan__sub">Усі місяці навчального року одразу</p>
+            <div class="club-plan__price"><span class="num">2450</span> грн<small>/рік</small></div>
+            <div class="club-plan__save">Вигода понад 2000 грн — це як ~5 місяців у подарунок</div>
+            <ul class="club-plan__list">
+              <li>Усе з місячної підписки — на цілий рік</li>
+              <li>Найкраща ціна за місяць</li>
+              <li>Оформили раз — і не думаєте про це весь рік</li>
+            </ul>
+            <a class="btn btn--cta btn--block" href="https://secure.wayforpay.com/button/b5c4a0e7a9889" target="_blank" rel="noopener">Приєднатись на рік</a>
+          </article>
+
+        </div>
+
+        <p class="club-plans__note">💡 Річна підписка — найвигідніший варіант: платите як за ~5 місяців, а матеріали отримуєте на весь навчальний рік.</p>
+      </div>
+    </section>
+
+    <!-- ========== ФІНАЛЬНИЙ CTA ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Приєднуйтесь до «Творчого Вчителя»</h2>
+            <p>Готові матеріали щомісяця — більше часу для дітей і для себе.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a class="btn btn--cta" href="#tarify">Оформити підписку</a>
+            <a class="btn btn--outline-light" href="https://t.me/SvitAcademyBot" target="_blank" rel="noopener">Питання в Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/assets/js/main.js?v=3"></script>
+  <script src="/assets/js/include.js?v=3"></script>
+  <script src="/assets/js/live-reload.js?v=3"></script>
+</body>
+</html>

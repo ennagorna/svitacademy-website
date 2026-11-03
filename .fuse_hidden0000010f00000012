@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Клуб «Перший крок до школи» — підписка для педагогів і репетиторів | Svit Academy</title>
+  <meta name="description" content="Клуб «Перший крок до школи» — готова система для занять, комунікації з батьками та набору учнів, що оновлюється щомісяця. Матеріали, діагностика, розбори складних ситуацій і чат підтримки. Місячна 390 грн або річна 3900 грн.">
+  <link rel="canonical" href="https://svitacademy.com/litniy-klub-repetytoram.html">
+
+  <meta property="og:title" content="Клуб «Перший крок до школи» — підписка для педагогів">
+  <meta property="og:description" content="Готова система для занять, комунікації та набору учнів. Відкрив — провів — заробив.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://svitacademy.com/litniy-klub-repetytoram.html">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/logo/favicon-512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css-v4/variables.css">
+  <link rel="stylesheet" href="/assets/css-v4/base.css">
+  <link rel="stylesheet" href="/assets/css-v4/layout.css">
+  <link rel="stylesheet" href="/assets/css-v4/components.css">
+  <link rel="stylesheet" href="/assets/css-v4/utilities.css">
+  <link rel="stylesheet" href="/assets/css-v4/pages/tutors.css">
+  <style id="nav-fix">
+  /* Критичний фікс мобільного підменю — вбудований у head, тож працює
+     навіть якщо зовнішній CSS завантажився зі старого кешу. */
+  @media (max-width:1023px){
+    .nav__dropdown{position:static!important;left:auto!important;right:auto!important;
+      transform:none!important;width:100%!important;max-width:100%!important;
+      min-width:0!important;box-sizing:border-box!important;}
+    .nav__item--open .nav__dropdown{display:block!important;transform:none!important;
+      left:auto!important;right:auto!important;}
+  }
+  </style>
+</head>
+<body data-page="kursy-dlya-pedagogiv.html">
+
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- ========== ШАПКА ========== -->
+    <section class="page-hero">
+      <img class="page-hero__deco page-hero__deco--1" src="/assets/img/icons/icon3d-cap.webp" alt="" aria-hidden="true">
+      <img class="page-hero__deco page-hero__deco--2" src="/assets/img/icons/icon3d-books.webp" alt="" aria-hidden="true">
+      <img class="page-hero__deco page-hero__deco--3" src="/assets/img/icons/puzzle-orange.svg" alt="" aria-hidden="true">
+      <img class="page-hero__deco page-hero__deco--4" src="/assets/img/icons/puzzle-green.svg" alt="" aria-hidden="true">
+      <div class="container page-hero__inner">
+        <span class="eyebrow">Клуб для педагогів і репетиторів</span>
+        <h1>Перший крок до школи</h1>
+        <p class="page-hero__text" style="font-family:var(--font-head);font-weight:600;color:var(--color-primary);font-size:1.25rem;">Відкрив — провів — заробив</p>
+        <p class="page-hero__text mt-2">Готова система для занять, комунікації з батьками та набору учнів — оновлюється щомісяця.</p>
+        <div class="flex-center gap-3 flex-wrap mt-6">
+          <a class="btn btn--cta" href="#taryfy">Обрати підписку</a>
+          <a class="btn btn--outline" href="#vseredyni">Що всередині</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ПРО КЛУБ ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="media-split">
+          <div class="media-split__media">
+            <img class="media-split__img ph" src="/assets/img/team/team-tutors-club.webp" alt="Педагоги Svit Academy" width="440" height="550" loading="lazy">
+          </div>
+          <div class="media-split__body">
+            <span class="section-kicker">Про клуб</span>
+            <h2>Не разовий набір файлів, а жива система</h2>
+            <p class="mt-3">У клубі «Перший крок до школи» вже є все, щоб відкрити матеріали, провести сильне заняття, показати результат батькам і набрати наступних учнів. Вам більше не потрібно збирати заняття по шматочках із десятків сайтів і чатів.</p>
+            <p class="mt-3">Не потрібно самостійно шукати кожну вправу, писати кожен скрипт і вигадувати кожен допис. Це не магія — це система.</p>
+            <a class="btn btn--cta mt-4" href="#taryfy">Обрати підписку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== СКЛАДНІ СИТУАЦІЇ ========== -->
+    <section class="section section--lavender" id="vseredyni">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Гілка складних ситуацій</span>
+          <h2>Як працювати з будь-якою дитиною</h2>
+          <p>Відеорозбори, пам'ятки, фрази педагога, реальні кейси й готові алгоритми дій.</p>
+        </div>
+        <div class="topic-grid">
+          <div class="topic-card"><span class="topic-card__num">1</span><p>Як залучати тихих і тривожних дітей</p></div>
+          <div class="topic-card"><span class="topic-card__num">2</span><p>Як працювати з активними й імпульсивними</p></div>
+          <div class="topic-card"><span class="topic-card__num">3</span><p>Як утримувати увагу</p></div>
+          <div class="topic-card"><span class="topic-card__num">4</span><p>Як працювати з дітьми з РДУГ</p></div>
+          <div class="topic-card"><span class="topic-card__num">5</span><p>Як реагувати на відмову</p></div>
+          <div class="topic-card"><span class="topic-card__num">6</span><p>Що робити, коли дитина каже «не хочу»</p></div>
+          <div class="topic-card"><span class="topic-card__num">7</span><p>Як мотивувати без тиску</p></div>
+          <div class="topic-card"><span class="topic-card__num">8</span><p>Як завершити заняття так, щоб дитина хотіла повернутися</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ДІАГНОСТИКА ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Результат видно</span>
+          <h2>Діагностика та демонстрація результату</h2>
+          <p>Педагог фіксує стартовий рівень, планує роботу, а наприкінці показує батькам конкретну динаміку — не абстрактне «стало краще». Це підвищує довіру, цінність занять і бажання продовжувати навчання.</p>
+        </div>
+        <p class="text-center text-muted" style="margin-bottom:var(--space-5);">Інструменти для вхідної та підсумкової діагностики дають змогу оцінити:</p>
+        <ul class="deliverables">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Мовлення</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Читання</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Фонематичний слух</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Математичні навички</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Логіку</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Увагу</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Пам'ять</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Графомоторику</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Емоційну готовність</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Самостійність</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Уміння слухати інструкцію</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== ЩОМІСЯЦЯ ========== -->
+    <section class="section section--lavender">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Щомісяця</span>
+          <h2>Що нового отримує учасник</h2>
+          <p>Клуб постійно наповнюється, тому педагог отримує не разовий набір файлів, а живу професійну систему на весь період доступу.</p>
+        </div>
+        <ul class="deliverables">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Нові конспекти</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Презентації</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>PDF-друківки</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Нейроігри</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Настільні ігри</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Відеоігри</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Інтерактивні вправи</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Сценарії першого заняття</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Скрипти для батьків</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Маркетингові тексти та ідеї для набору</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Розбори складних ситуацій</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Корисні відео й методичні пояснення</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== ЧАТ ПІДТРИМКИ ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="media-split media-split--reverse">
+          <div class="media-split__media">
+            <img class="media-split__img ph" src="/assets/img/team/team-podcast-hosts.webp" alt="Спільнота педагогів Svit Academy" width="440" height="550" loading="lazy">
+          </div>
+          <div class="media-split__body">
+            <span class="section-kicker">Ви не самі</span>
+            <h2>Чат підтримки</h2>
+            <ul class="offer__list" style="margin-top:var(--space-4);">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Ставити запитання й обговорювати складні випадки</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Ділитися результатами й отримувати підтримку</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Обмінюватися ідеями й бачити досвід інших педагогів</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Не залишатися сам на сам із сумнівами</span></li>
+            </ul>
+            <p class="mt-4 text-muted" style="font-size:var(--fs-small);">Тут можна запитати і про дитину, яка не хоче працювати, і про маму, яка написала «ми подумаємо», і про те, яку ціну поставити на мінігрупу.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ДЛЯ КОГО ========== -->
+    <section class="section section--lavender">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Для кого</span>
+          <h2>Кому підійде клуб</h2>
+        </div>
+        <div class="aud-chips">
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Репетиторам підготовки до школи</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Вихователям</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Учителям початкових класів</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Педагогам центрів розвитку</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Логопедам</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Практичним психологам</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Студентам педагогічних спеціальностей</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Тим, хто планує почати приватну практику</span>
+          <span class="aud-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Досвідченим педагогам, які хочуть оновити заняття й збільшити дохід</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ЩО ОТРИМАЄ ПЕДАГОГ ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Ваш результат</span>
+          <h2>Що отримає педагог</h2>
+        </div>
+        <ul class="deliverables">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Готову програму роботи й наповнення для занять</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Ідеї на багато місяців</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Впевненість перед першою зустріччю</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Скрипти спілкування з батьками</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Алгоритми роботи з різними дітьми</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Маркетингові інструменти</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Підтримку колег і команди</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Можливість швидше набрати учнів</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Більше часу на життя поза роботою</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== ГОЛОВНА ІДЕЯ ========== -->
+    <section class="section section--lavender">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Головна ідея клубу</span>
+          <h2>Це не магія — це система</h2>
+          <p>У клубі «Перший крок до школи» вже є все, щоб педагог міг діяти за простим ланцюжком:</p>
+        </div>
+        <div class="idea-flow">
+          <div class="idea-step"><div class="idea-step__num">1</div><p>Відкрити матеріали</p></div>
+          <div class="idea-step"><div class="idea-step__num">2</div><p>Провести сильне заняття</p></div>
+          <div class="idea-step"><div class="idea-step__num">3</div><p>Показати результат батькам</p></div>
+          <div class="idea-step"><div class="idea-step__num">4</div><p>Набрати наступних учнів</p></div>
+          <div class="idea-step"><div class="idea-step__num">5</div><p>Отримати дохід</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ТАРИФИ ========== -->
+    <section class="section" id="taryfy">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Тарифи</span>
+          <h2>Оберіть підписку</h2>
+        </div>
+        <div class="pricing">
+          <!-- Місячна -->
+          <div class="plan">
+            <div class="plan__name">Місячна підписка</div>
+            <div class="plan__tagline">Повний доступ на місяць</div>
+            <div class="plan__price num">390 грн<span style="font-size:var(--fs-small);font-weight:400;color:var(--color-text-muted);"> / міс</span></div>
+            <div class="plan__features">
+              <div class="plan__feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Усі матеріали й оновлення місяця</span></div>
+              <div class="plan__feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Гілка складних ситуацій і діагностика</span></div>
+              <div class="plan__feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Чат підтримки</span></div>
+            </div>
+            <a class="btn btn--outline" href="https://secure.wayforpay.com/button/bdbade1772566" target="_blank" rel="noopener">Оформити місяць</a>
+          </div>
+
+          <!-- Річна -->
+          <div class="plan plan--featured">
+            <span class="badge badge--value plan__badge">Найвигідніше</span>
+            <div class="plan__name">Річна підписка</div>
+            <div class="plan__tagline">Доступ на весь рік</div>
+            <div class="plan__price num">3900 грн<span style="font-size:var(--fs-small);font-weight:400;color:var(--color-text-muted);"> / рік</span></div>
+            <div class="plan__features">
+              <div class="plan__feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Усе з місячної підписки</span></div>
+              <div class="plan__feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Усі щомісячні оновлення протягом року</span></div>
+              <div class="plan__feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Вигідніше, ніж платити помісячно</span></div>
+            </div>
+            <a class="btn btn--cta" href="https://secure.wayforpay.com/button/b61922b4a5387" target="_blank" rel="noopener">Оформити рік</a>
+          </div>
+        </div>
+
+        <div class="money-quote mt-6" style="margin-top:var(--space-8);">
+          <img src="/assets/img/icons/icon3d-lightbulb.webp" alt="">
+          <p>Вартість підписки окупається одним-єдиним абонементом одного учня. Усе, що ви заробите далі, працюючи за готовою системою — ваш чистий дохід.</p>
+        </div>
+        <p class="text-center text-muted mt-6" style="font-size:var(--fs-small);">Оплата через WayForPay. Доступ до матеріалів — після оплати.</p>
+      </div>
+    </section>
+
+    <!-- ========== ФІНАЛЬНИЙ CTA ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Готова система у ваших руках</h2>
+            <p>Приєднуйтеся до клубу й отримайте готову систему для занять, комунікації та набору учнів.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a class="btn btn--cta" href="#taryfy">Обрати підписку</a>
+            <a class="btn btn--outline-light" href="https://t.me/SvitAcademyBot" target="_blank" rel="noopener">Питання в Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/assets/js/main.js?v=3"></script>
+  <script src="/assets/js/include.js?v=3"></script>
+  <script src="/assets/js/live-reload.js?v=3"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мистецтво планування — 5-денний марафон | Svit Academy</title>
+  <meta name="description" content="5-денний марафон «Мистецтво планування»: перетвори мрії на чіткий план дій і досягай цілей у всіх сферах життя. 5 відеоуроків, 11 воркбуків, техніки та медитації.">
+  <link rel="canonical" href="https://svitacademy.com/mystetstvo-planuvannia.html">
+
+  <meta property="og:title" content="Мистецтво планування — 5-денний марафон">
+  <meta property="og:description" content="Перетвори мрії на чіткий план дій. 5 днів, 5 відеоуроків, 11 воркбуків.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://svitacademy.com/mystetstvo-planuvannia.html">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/logo/favicon-512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css-v4/variables.css">
+  <link rel="stylesheet" href="/assets/css-v4/base.css">
+  <link rel="stylesheet" href="/assets/css-v4/layout.css">
+  <link rel="stylesheet" href="/assets/css-v4/components.css">
+  <link rel="stylesheet" href="/assets/css-v4/utilities.css">
+  <link rel="stylesheet" href="/assets/css-v4/pages/planning-course.css">
+  <style id="nav-fix">
+  @media (max-width:1023px){
+    .nav__dropdown{position:static!important;left:auto!important;right:auto!important;
+      transform:none!important;width:100%!important;max-width:100%!important;
+      min-width:0!important;box-sizing:border-box!important;}
+    .nav__item--open .nav__dropdown{display:block!important;transform:none!important;
+      left:auto!important;right:auto!important;}
+  }
+  </style>
+</head>
+<body data-page="mystetstvo-planuvannia.html">
+
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="mp-hero">
+      <img class="mp-hero__deco mp-hero__deco--1" src="/assets/img/icons/icon3d-growth.svg" alt="" aria-hidden="true">
+      <img class="mp-hero__deco mp-hero__deco--2" src="/assets/img/icons/icon3d-lightbulb.webp" alt="" aria-hidden="true">
+      <div class="container mp-hero__grid">
+        <div class="mp-hero__body">
+          <span class="mp-hero__kicker">Від мрії до результату — твій найкращий рік починається тут</span>
+          <h1 class="mp-hero__title">Мистецтво планування</h1>
+          <p class="mp-hero__lead">За 5 днів дізнайтесь, як перетворити свої бажання на чіткий план дій і досягти цілей у всіх сферах життя.</p>
+
+          <div class="mp-timer" id="timer-hero">
+            <div class="mp-timer__label">Реєструйтесь за 15 хвилин і отримайте знижку 75%</div>
+            <div class="mp-timer__clock"><span data-timer>15:00</span></div>
+            <div class="mp-timer__expired" data-expired hidden>Offer expired — спеціальну ціну закрито</div>
+          </div>
+
+          <a class="btn btn--cta btn--lg" href="https://secure.wayforpay.com/button/b41cd660e4418" target="_blank" rel="noopener">Приєднатись до марафону</a>
+          <div class="mp-hero__stats">
+            <span><b class="num">5</b> днів</span>
+            <span><b class="num">5</b> відеоуроків</span>
+            <span><b class="num">11</b> воркбуків</span>
+          </div>
+        </div>
+        <div class="mp-hero__media">
+          <img src="/assets/img/planning/planning-hero.webp" alt="Оксана Нагорна — спікерка марафону" width="698" height="892">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ЧОМУ НАШ МАРАФОН ========== -->
+    <section class="section">
+      <div class="container mp-why">
+        <span class="section-kicker">Чому наш марафон?</span>
+        <h2>5 днів роботи над собою</h2>
+        <p class="mp-why__text">Ми допоможемо розкрити твої справжні бажання, перетворити їх на досяжні цілі та створити план дій на цей рік.</p>
+        <p class="mp-why__highlight">Зроби цей рік роком своїх досягнень.</p>
+      </div>
+    </section>
+
+    <!-- ========== ПРОГРАМА ========== -->
+    <section class="section section--lavender">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Програма марафону</span>
+          <h2>5 днів — від мрії до річного плану</h2>
+          <p>5 відеоуроків, 11 воркбуків, вправи, техніки та медитації.</p>
+        </div>
+        <div class="mp-days">
+
+          <article class="mp-day">
+            <div class="mp-day__num">День <span class="num">1</span></div>
+            <h3 class="mp-day__title">Мотиваційний старт: як мрії змінюють життя?</h3>
+            <p class="mp-day__meta">Лекція · воркбук «Мій ідеальний рік: Хто я? Чого я хочу? Чого я можу досягти?»</p>
+            <p class="mp-day__res">✦ Розуміння, чого ти насправді хочеш</p>
+          </article>
+
+          <article class="mp-day">
+            <div class="mp-day__num">День <span class="num">2</span></div>
+            <h3 class="mp-day__title">Аналіз і постановка цілей на рік за кожною сферою життя</h3>
+            <p class="mp-day__meta">Лекція · воркбук «Колесо життя» · воркбук «100 мрій»</p>
+            <p class="mp-day__res">✦ Техніка SMART-цілей і «Колесо життя»</p>
+          </article>
+
+          <article class="mp-day">
+            <div class="mp-day__num">День <span class="num">3</span></div>
+            <h3 class="mp-day__title">Планування дій</h3>
+            <p class="mp-day__meta">Лекція · воркбуки «Мої щоденні звички», «Техніки тайм-менеджменту», «План Б для труднощів»</p>
+            <p class="mp-day__res">✦ Щоденні звички, які ведуть до результату</p>
+          </article>
+
+          <article class="mp-day">
+            <div class="mp-day__num">День <span class="num">4</span></div>
+            <h3 class="mp-day__title">Робота над собою</h3>
+            <p class="mp-day__meta">Лекція · воркбуки «Щоденник моїх досягнень та перемог», «Моє коло підтримки»</p>
+            <p class="mp-day__res">✦ Техніки подолання страхів і збереження мотивації</p>
+          </article>
+
+          <article class="mp-day">
+            <div class="mp-day__num">День <span class="num">5</span></div>
+            <h3 class="mp-day__title">Контроль та підсумки планування</h3>
+            <p class="mp-day__meta">Лекція · воркбуки «Рефлексія місяця», «Календар успіху — річний план», «Лист собі через рік» · медитація</p>
+            <p class="mp-day__res">✦ Створення річного плану та система відстеження прогресу</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== КОМУ ПІДІЙДЕ ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Кому підійде марафон</span>
+          <h2>Для всіх, хто хоче зробити цей рік продуктивним і гармонійним</h2>
+        </div>
+        <div class="mp-aud">
+          <div class="mp-aud__card">
+            <span class="mp-aud__word">Відчуваєш,</span>
+            <p>що час іде, а мрії залишаються нереалізованими?</p>
+          </div>
+          <div class="mp-aud__card">
+            <span class="mp-aud__word">Не знаєш,</span>
+            <p>як планувати цілі, щоб вони справді здійснювалися?</p>
+          </div>
+          <div class="mp-aud__card">
+            <span class="mp-aud__word">Шукаєш</span>
+            <p>натхнення і підтримку для змін?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== СТРІЧКА ========== -->
+    <div class="mp-marquee" aria-hidden="true">
+      <div class="mp-marquee__track">
+        <span>Цей марафон саме для тебе!</span><span>✦</span>
+        <span>Цей марафон саме для тебе!</span><span>✦</span>
+        <span>Цей марафон саме для тебе!</span><span>✦</span>
+        <span>Цей марафон саме для тебе!</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- ========== ВІДГУКИ ========== -->
+    <section class="section section--lavender">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Відгуки</span>
+          <h2>Що кажуть про Svit Academy</h2>
+        </div>
+        <div class="testi-masonry">
+          <figure class="testimonial testimonial--shot"><img class="testimonial__shot" src="/assets/img/testimonials/testimonial-oksana-1.png" alt="Відгук учасниці" loading="lazy"></figure>
+          <figure class="testimonial testimonial--shot"><img class="testimonial__shot" src="/assets/img/testimonials/testimonial-oksana-2.png" alt="Відгук про Оксану" loading="lazy"></figure>
+          <figure class="testimonial testimonial--shot"><img class="testimonial__shot" src="/assets/img/testimonials/testimonial-oksana-4.png" alt="Відгук про навчання" loading="lazy"></figure>
+          <figure class="testimonial testimonial--shot"><img class="testimonial__shot" src="/assets/img/testimonials/testimonial-oksana-5.png" alt="Відгук про педагогів" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ВАРТІСТЬ ========== -->
+    <section class="section" id="tsina">
+      <div class="container">
+        <div class="section__head">
+          <span class="section-kicker">Вартість участі</span>
+          <h2>Від мрії до результату: марафон планування</h2>
+        </div>
+        <div class="mp-price">
+          <div class="mp-price__left">
+            <ul class="mp-price__list">
+              <li>5 відеоуроків + 11 авторських воркбуків</li>
+              <li>Вправи, техніки та медитація</li>
+              <li>Онлайн, у зручному темпі</li>
+              <li>Доступ до записів — 1 місяць</li>
+            </ul>
+          </div>
+          <div class="mp-price__buy">
+            <span class="mp-price__flag">🔥 Знижка 75%</span>
+            <div class="mp-price__nums">
+              <span class="mp-price__old num">1 560 грн</span>
+              <span class="mp-price__now num">390 грн</span>
+            </div>
+            <div class="mp-timer mp-timer--compact" id="timer-price">
+              <span class="mp-timer__mini">Спеціальна ціна діє ще</span>
+              <span class="mp-timer__clock"><span data-timer>15:00</span></span>
+              <span class="mp-timer__expired" data-expired hidden>Offer expired</span>
+            </div>
+            <a class="btn btn--cta btn--lg btn--block" href="https://secure.wayforpay.com/button/b41cd660e4418" target="_blank" rel="noopener">Зареєструватись зі знижкою 75%</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== СПІКЕР ========== -->
+    <section class="section section--lavender">
+      <div class="container">
+        <div class="media-split">
+          <div class="media-split__media">
+            <img class="media-split__img" src="/assets/img/planning/planning-1.webp" alt="Оксана Нагорна" width="440" height="550" loading="lazy">
+          </div>
+          <div class="media-split__body">
+            <span class="section-kicker">Спікер марафону</span>
+            <h2>Оксана Нагорна</h2>
+            <p class="mt-3">Засновниця Svit Academy, керівниця освітніх закладів, експертка з виховання та розвитку. 21 рік досвіду в освіті та 4 створені освітні заклади.</p>
+            <p class="mt-3">Оксана допомагає перетворювати мрії на чіткі плани — і досягати їх без вигорання, крок за кроком.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ФІНАЛЬНИЙ CTA ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Не відкладай зміни на завтра!</h2>
+            <p>Почни працювати над своїми мріями вже сьогодні. Приєднуйся до марафону та створюй свій найкращий рік.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a class="btn btn--cta" href="https://secure.wayforpay.com/button/b41cd660e4418" target="_blank" rel="noopener">Приєднатись</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Q&A ========== -->
+    <section class="section section--lavender">
+      <div class="container mp-faq">
+        <div class="section__head">
+          <span class="section-kicker">Q&A</span>
+          <h2>Часті питання</h2>
+        </div>
+        <details class="mp-faq__item">
+          <summary>Що потрібно для участі?</summary>
+          <p>Зручний гаджет і доступ до інтернету.</p>
+        </details>
+        <details class="mp-faq__item">
+          <summary>Чи залишиться доступ до матеріалів?</summary>
+          <p>Так, записи будуть доступні протягом 1 місяця.</p>
+        </details>
+        <details class="mp-faq__item">
+          <summary>Чи можу я повернути гроші, якщо не вийде брати участь?</summary>
+          <p>Так, до початку марафону ви можете повернути 100% коштів.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Липка панель із таймером -->
+  <div class="mp-sticky" id="timer-sticky">
+    <div class="mp-sticky__info">
+      <span class="mp-sticky__old num">1 560</span>
+      <span class="mp-sticky__now num">390 грн</span>
+      <span class="mp-sticky__clock">⏳ <span data-timer>15:00</span></span>
+    </div>
+    <a class="btn btn--cta" href="https://secure.wayforpay.com/button/b41cd660e4418" target="_blank" rel="noopener">Приєднатись</a>
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/include.js"></script>
+  <script>
+  /* 15-хвилинний зворотний відлік спеціальної ціни.
+     Старт зберігається в localStorage, тож перезавантаження не «обнуляє» акцію. */
+  (function () {
+    var LIMIT = 15 * 60 * 1000;            // 15 хвилин
+    var KEY = 'mp_offer_start';
+    var start = parseInt(localStorage.getItem(KEY), 10);
+    if (!start || isNaN(start)) { start = Date.now(); localStorage.setItem(KEY, String(start)); }
+
+    var clocks = document.querySelectorAll('[data-timer]');
+    var expiredEls = document.querySelectorAll('[data-expired]');
+
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+    function tick() {
+      var left = LIMIT - (Date.now() - start);
+      if (left <= 0) {
+        clocks.forEach(function (c) { c.textContent = '00:00'; });
+        expiredEls.forEach(function (e) { e.hidden = false; });
+        document.body.classList.add('mp-expired');
+        return;
+      }
+      var m = Math.floor(left / 60000);
+      var s = Math.floor((left % 60000) / 1000);
+      clocks.forEach(function (c) { c.textContent = pad(m) + ':' + pad(s); });
+      requestAnimationFrame(function(){ setTimeout(tick, 250); });
+    }
+    tick();
+
+    /* Показати липку панель після скролу */
+    var sticky = document.getElementById('timer-sticky');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 700) sticky.classList.add('is-visible');
+      else sticky.classList.remove('is-visible');
+    }, { passive: true });
+  })();
+  </script>
+</body>
+</html>
